@@ -1,0 +1,12 @@
+#!/bin/sh
+
+name="$1"     # name of the benchmark, e.g., test
+script="$2"   # file name of the script to run
+csv="$3"      # results go here (to be produced by the script)
+
+log="output/$name.log"     # log stdout and stderr of the benchmark here
+
+# run the script with the output file name as parameter
+# 2>&1 merges stderr into stdout
+# | tee ... writes the output to the log and displays it at the same time
+exec "$script" "$csv" 2>&1 | tee "$log"
