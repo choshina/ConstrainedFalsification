@@ -1,0 +1,23 @@
+5
+eq
+0 1 0 throttle_u0 brake_u0
+or
+eq
+1 0 0 throttle_u1 brake_u1
+eq
+0 1 0 throttle_u1 brake_u1
+or
+eq
+1 0 0 throttle_u2 brake_u2
+eq
+0 1 0 throttle_u2 brake_u2
+or
+eq
+1 0 0 throttle_u3 brake_u3
+eq
+0 1 0 throttle_u3 brake_u3
+or
+eq
+1 0 0 throttle_u4 brake_u4
+eq
+0 1 0 throttle_u4 brake_u4

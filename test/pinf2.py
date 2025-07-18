@@ -1,4 +1,17 @@
 import sys
+import platform
+import glob
+
+matlab = ''
+osys = platform.system()
+if osys == 'Linux':
+    mpaths = glob.glob('/usr/local/MATLAB/*/bin/')
+    mpaths.sort()
+    matlab = mpaths[-1] + '/matlab'
+elif osys == 'Darwin':
+    mpaths = glob.glob('/Applications/MATLAB*/bin/')
+    mpaths.sort()
+    matlab = mpaths[-1] + '/matlab'
 
 model = ''
 algorithm = '' 
@@ -85,7 +98,7 @@ for ph in phi_str:
 				filename = model+ '_breach_' + property[0]+'_' + str(cp)  +'_' + opt + '_' + ctr + '_' + 'inf'
 				param = '\n'.join(parameters)
 				pat_s = pattern.split(';')
-				with open('../benchmarks/'+filename,'w') as bm:
+				with open('benchmarks/'+filename,'w') as bm:
 					bm.write('#!/bin/sh\n')
 					bm.write('csv=$1\n')
 					bm.write('matlab -nodesktop -nosplash <<EOF\n')

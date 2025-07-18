@@ -1,0 +1,21 @@
+4
+or
+ine
+1 0 -70 throttle_u0 throttle_u1
+ine
+1 0 -10 throttle_u1 throttle_u0
+or
+ine
+1 0 -70 throttle_u1 throttle_u2
+ine
+1 0 -10 throttle_u2 throttle_u1
+or
+ine
+1 0 -70 throttle_u2 throttle_u3
+ine
+1 0 -10 throttle_u3 throttle_u2
+or
+ine
+1 0 -70 throttle_u3 throttle_u4
+ine
+1 0 -10 throttle_u4 throttle_u3

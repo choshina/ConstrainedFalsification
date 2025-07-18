@@ -1,0 +1,89 @@
+8
+or
+and
+ine
+1 0 0 u1_u0 u3_u0
+ine
+0 1 0 u1_u0 u3_u0
+and
+ine
+-1 0 0 u1_u0 u3_u0
+ine
+0 -1 0 u1_u0 u3_u0
+or
+and
+ine
+1 0 0 u2_u0 u4_u0
+ine
+0 1 0 u2_u0 u4_u0
+and
+ine
+-1 0 0 u2_u0 u4_u0
+ine
+0 -1 0 u2_u0 u4_u0
+or
+and
+ine
+1 0 0 u1_u1 u3_u1
+ine
+0 1 0 u1_u1 u3_u1
+and
+ine
+-1 0 0 u1_u1 u3_u1
+ine
+0 -1 0 u1_u1 u3_u1
+or
+and
+ine
+1 0 0 u2_u1 u4_u1
+ine
+0 1 0 u2_u1 u4_u1
+and
+ine
+-1 0 0 u2_u1 u4_u1
+ine
+0 -1 0 u2_u1 u4_u1
+or
+and
+ine
+1 0 0 u1_u2 u3_u2
+ine
+0 1 0 u1_u2 u3_u2
+and
+ine
+-1 0 0 u1_u2 u3_u2
+ine
+0 -1 0 u1_u2 u3_u2
+or
+and
+ine
+1 0 0 u2_u2 u4_u2
+ine
+0 1 0 u2_u2 u4_u2
+and
+ine
+-1 0 0 u2_u2 u4_u2
+ine
+0 -1 0 u2_u2 u4_u2
+or
+and
+ine
+1 0 0 u1_u3 u3_u3
+ine
+0 1 0 u1_u3 u3_u3
+and
+ine
+-1 0 0 u1_u3 u3_u3
+ine
+0 -1 0 u1_u3 u3_u3
+or
+and
+ine
+1 0 0 u2_u3 u4_u3
+ine
+0 1 0 u2_u3 u4_u3
+and
+ine
+-1 0 0 u2_u3 u4_u3
+ine
+0 -1 0 u2_u3 u4_u3
