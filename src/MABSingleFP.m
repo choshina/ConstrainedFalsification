@@ -24,7 +24,9 @@ classdef MABSingleFP < FalsificationProblem
         
         function this = MABSingleFP(BrSet, phi, cons, s, mI)
             this = this@FalsificationProblem(BrSet, phi);
-            this.cp = BrSet.InputGenerator.signalGenerators{1,1}.num_cp(1);
+            if isa(BrSet, 'BreachSimulinkSystem')
+                this.cp = BrSet.InputGenerator.signalGenerators{1,1}.num_cp(1);
+            end
             this.constraints  = cons;
             this.cons_size = numel(cons);
             this.variables = BrSet.GetSysVariables();

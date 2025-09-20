@@ -28,7 +28,9 @@ classdef PracticalFP_Single < FalsificationProblem
         
         function this = PracticalFP_Single(BrSet, phi, cons, s)
             this = this@FalsificationProblem(BrSet, phi);
-            this.cp = BrSet.InputGenerator.signalGenerators{1,1}.num_cp(1);
+            if isa(BrSet, 'BreachSimulinkSystem')
+                this.cp = BrSet.InputGenerator.signalGenerators{1,1}.num_cp(1);
+            end
             this.constraints  = cons;
             this.cons_size = numel(cons);
             this.variables = BrSet.GetSysVariables();
